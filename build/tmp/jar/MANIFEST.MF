@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: affinity
+Specification-Vendor: Shutdoor
+Specification-Version: 1
+Implementation-Title: Affinity - Forge
+Implementation-Version: 0.0.1
+Implementation-Vendor: Shutdoor
+Implementation-Timestamp: 2022-08-20T23:15:22-0500
+

@@ -35,9 +35,9 @@ public class EnchantAffinity extends Enchantment {
 
     @SubscribeEvent
     public static void breakSpeed(PlayerEvent.BreakSpeed e) {
-        Player p = e.getPlayer();
+        Player p = e.getEntity();
 
-        if(EnchantmentHelper.getEnchantmentLevel(Affinity.affinity, p) > 0){
+        if(EnchantmentHelper.getEnchantmentLevel(EnchantmentReg.AFFINITY.get(), p) > 0){
 
 
         if(!(p.isOnGround()) && !(p.isUnderWater())){

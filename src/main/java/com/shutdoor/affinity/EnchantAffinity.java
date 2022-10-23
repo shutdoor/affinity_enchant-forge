@@ -10,6 +10,8 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Locale;
+
 import static com.shutdoor.affinity.Affinity.MODID;
 
 @Mod.EventBusSubscriber(modid = MODID)
@@ -30,7 +32,7 @@ public class EnchantAffinity extends Enchantment {
 
     @Override
     protected boolean checkCompatibility(Enchantment p_44690_) {
-        return super.checkCompatibility(p_44690_) && p_44690_.toString().contains("affinity");
+        return super.checkCompatibility(p_44690_) && !(p_44690_.getRegistryName().toString().toLowerCase().contains("affinity"));
     }
 
     @SubscribeEvent

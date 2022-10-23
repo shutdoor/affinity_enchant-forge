@@ -12,7 +12,6 @@ import static com.shutdoor.affinity.Affinity.MODID;
 @Mod(MODID)
 public class Affinity
 {
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final String MODID = "affinity";
 

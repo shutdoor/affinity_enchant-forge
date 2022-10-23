@@ -30,7 +30,7 @@ public class EnchantAffinity extends Enchantment {
 
     @Override
     protected boolean checkCompatibility(Enchantment p_44690_) {
-        return super.checkCompatibility(p_44690_) && p_44690_.toString().contains("affinity");
+        return super.checkCompatibility(p_44690_) && !(p_44690_.getFullname(0).toString().toLowerCase().contains("affinity"));
     }
 
     @SubscribeEvent
